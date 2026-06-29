@@ -1,0 +1,9 @@
+P001,Laptop,Electronics,58000.0,5,3
+P002,Smartphone,Electronics,25000.0,8,4
+P003,Wireless Mouse,Electronics,1200.0,2,5
+P004,T-Shirt,Apparel,799.0,15,5
+P005,Jeans,Apparel,1499.0,12,4
+P006,Notebook,Stationery,60.0,50,10
+P007,Gel Pen,Stationery,20.0,8,15
+P008,Backpack,Apparel,2100.0,6,2
+P009,wireless keyboard,electronics,1500.0,15,3
