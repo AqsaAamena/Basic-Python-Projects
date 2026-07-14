@@ -1,12 +1,11 @@
 # Master Dictionary: ISBN -> {title, author, available, borrower, student_id, issue_date}
 library_catalog = {
-    "978-3-16-148410-0": {"title": "Python Programming", "author": "John Smith", "available": True, "borrower": None, "student_id": None, "issue_date": None}
+    "978-3-16-148410-0": {"title": "Python Programming", "author": "John Smith", "available": True, 
+                          "borrower": None, "student_id": None, "issue_date": None}
     }
 def check_due_date():
-    """Calculates due date from issue date (Hardcoded for simplicity to match sample output)."""
     return "28-June-2026"
 def add_book():
-    """Register a new book."""
     print("\n====== Add Book ======")
     isbn = input("Enter ISBN : ")
     if isbn in library_catalog:
@@ -45,7 +44,6 @@ def issue_book():
     print(f"Title : {book['title']}")
     print(f"Due Date: {check_due_date()}")
 def return_book():
-    """Process book return."""
     print("\n====== Return Book ======")
     isbn = input("Enter ISBN : ").strip()
     if isbn not in library_catalog:
@@ -62,7 +60,6 @@ def return_book():
     book["issue_date"] = None
     print("Return confirmation and updated status successfully!")
 def search_book():
-    """Search by title or author."""
     print("\n====== Search Book ======")
     keyword = input("Enter search keyword: ").lower()
     found = False
@@ -74,7 +71,6 @@ def search_book():
     if not found:
         print("No matching books found.")
 def view_catalog():
-    """Display full library catalog."""
     print("\n====== View All ======")
     if not library_catalog:
         print("Catalog is empty.")
